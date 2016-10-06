@@ -139,6 +139,21 @@ body{  background: darkgray;  }    /*background colour*/
  }
 
 
+ #product_box{
+     width: 780px;
+     text-align: center;
+     margin-left: 30px;
+     margin-bottom: 10px;
+ }
+
+ #single_product{
+     float: left;
+     margin-left: 20px;
+     padding: 10px;
+ }
+
+
+
 #footer{
     width: 1000px;
     height: 100px;
@@ -151,3 +166,5 @@ body{  background: darkgray;  }    /*background colour*/
     text-align: center;
     padding-top: 30px;
 }
+
+

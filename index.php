@@ -64,7 +64,17 @@ include("functions/functions.php"); // connecting to the functions page
 
 
 
-        <div id="content_area">This is the content area</div>
+        <div id="content_area">
+
+            <div id="product_box">
+
+                <?php getProduct()?>
+
+            </div>
+
+
+
+        </div>
     </div>
 
 
