@@ -33,6 +33,7 @@ body{  background: darkgray;  }    /*background colour*/
     width: 1000px;
     height: auto;
     margin: auto;
+    background: black;
 }
 
 .header_wrapper{
@@ -100,7 +101,7 @@ body{  background: darkgray;  }    /*background colour*/
 #content_area{
     width:  800px;
     float: right;
-    background: White;
+    background: midnightblue; /*change later*/
 }
 
 #sidebar{
@@ -146,12 +147,36 @@ body{  background: darkgray;  }    /*background colour*/
      margin-bottom: 10px;
  }
 
+ /*single product div on the functions page*/
  #single_product{
      float: left;
      margin-left: 20px;
      padding: 10px;
+     width: 180px;
+     height: 180px;
  }
+/*Single product img div found on functions page*/
+#single_product img{
+    border: solid black;
+}
 
+#shopping_cart{
+    width:800px;
+    height: 50px;
+    background: black;
+    color: white;
+}
+
+#shopping_cart span{
+    float: right;
+    font-size: 18px;
+    padding: 5px;
+    line-height: 40px;
+}
+
+#shopping_cart span a{
+    color: yellow;
+}
 
 
 #footer{

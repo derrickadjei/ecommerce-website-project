@@ -48,47 +48,38 @@ include("functions/functions.php"); // connecting to the functions page
     <div class="content_wrapper">
         <div id="sidebar">
             <div id="sidebar_titles">categories</div>
-                <ul id="cats">
-                    <?php
-                    getCats();  //category Function
-                    ?>
-                </ul>
+            <ul id="cats">
+                <?php
+                getCats();  //category Function
+                ?>
+            </ul>
 
             <div id="sidebar_titles">Brands</div>
-                <ul id="cats">
-                    <?php
-                    getBrands(); //brands function
-                    ?>
-                </ul>
-            </div>
+            <ul id="cats">
+                <?php
+                getBrands(); //brands function
+                ?>
+            </ul>
+        </div>
 
 
 
         <div id="content_area">
 
-        <?php
-        cart();
+            <div id="shopping_cart">
 
-        ?>
-
-
-        <div id="shopping_cart">
-
-            <span>Welcome To tekkers! shopping cart: - total items:<?php total_items()?> total price: <?php total_price()?> <a href="cart.php">go to cart</a> </span>
+                <span>Welcome To tekkers! shopping cart: - total items: total price: <a href="cart.php">go to cart</a> </span>
 
 
 
-        </div>
+            </div>
 
-            <?php
-            echo $ip = getIp();  // getting the IP address functions from the fuctions page
-            ?>
 
             <div id="product_box">
 
-                <?php getProduct()?>    <!-- pulling data from the functions page to display on the front page-->
-                <?php getCatProduct()?>
-                <?php getBrandProduct()?>
+               <?php
+               allProduct()
+               ?>
 
             </div>
 
@@ -98,7 +89,7 @@ include("functions/functions.php"); // connecting to the functions page
     </div>
 
 
-<!-- footer-->
+    <!-- footer-->
     <div id="footer">
         <div id="footer_text"> Online tech site project 2016. Derrick Adjie &copy;</div>
     </div>
